@@ -7,6 +7,10 @@
   font-size: 1.1rem;
 }
 
+body {
+  width: 100vw;
+}
+
 li {
   list-style: none;
 }
