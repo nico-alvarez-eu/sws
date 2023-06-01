@@ -1,0 +1,183 @@
+.grey {
+  background-color: #eee;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.presentation {
+  flex-direction: column;
+  background-image: url("../assets/website-banner.png");
+  background-image: url("../assets/website-banner.png"),
+    linear-gradient(
+      180deg,
+      rgba(74, 47, 247, 1) 60%,
+      rgba(74, 47, 247, 0.7) 70%,
+      rgba(74, 47, 247, 0.3) 80%
+    );
+  background-size: contain, cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 90vh;
+  color: #fff;
+}
+
+.props {
+  flex-direction: row;
+  justify-content: center;
+  padding: 70px 50px;
+}
+
+.services {
+  padding: 70px 50px;
+}
+
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+  padding-top: 90px;
+}
+
+.banner-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.banner-btn {
+  min-width: 200px;
+  max-width: 400px;
+  background-color: #fff;
+  color: #4a2ff7;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-btn:hover {
+  background-color: #170e4d;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.banner-prop {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  max-width: 450px;
+}
+
+.banner-prop > p {
+  margin-top: 20px;
+}
+
+.banner-service {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 0 200px;
+}
+
+.banner-service > img {
+  width: 480px;
+  height: auto;
+}
+
+.banner-service-description.right {
+  margin-left: 30px;
+}
+
+.banner-service-description.left {
+  margin-right: 30px;
+}
+
+.banner-service-description > h1 {
+  margin-bottom: 20px;
+}
+
+.banner-service-description > .banner-btn {
+  background-color: #170e4d;
+  color: #fff;
+}
+
+.banner-service-description > .banner-btn:hover {
+  background-color: #fff;
+  color: #4a2ff7;
+}
+
+.end {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 70vh;
+  color: #fff;
+}
+
+.banner-title-end {
+  font-size: 3rem;
+  font-weight: 700;
+  padding-top: 90px;
+}
+
+.end > .banner-btn {
+  margin: 0;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .presentation {
+    height: 60vh;
+  }
+
+  .banner-title {
+    padding-top: 50px;
+    font-size: 1.2rem;
+  }
+
+  .banner-text {
+    font-size: 1.4rem;
+  }
+
+  .props {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+  }
+
+  .banner-prop {
+    padding: 30px 0;
+  }
+
+  .services {
+    padding: 30px 0;
+  }
+
+  .banner-service {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .banner-service > img {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .banner-title-end {
+    font-size: 1.2rem;
+  }
+}
